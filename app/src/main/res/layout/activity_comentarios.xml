@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <!-- Primer LinearLayout horizontal para los botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Botón de Regresar -->
+        <Button
+            android:id="@+id/btnregresar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FD6600"
+            android:text="Regresar"
+            android:textColor="@color/white" />
+
+        <!-- Espacio entre los botones -->
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+        <!-- Botón de Agregar Reseña -->
+        <Button
+            android:id="@+id/btnAgregarResena"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FD6600"
+            android:text="Agregar Reseña"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- ListView para los comentarios -->
+    <ListView
+        android:id="@+id/listViewComentarios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <!-- Otros elementos si los tienes -->
+
+</LinearLayout>
+
